@@ -10,3 +10,5 @@ This has a parameter called "CommandName"; this is needed to specify which workf
 
 
 Using the config file you can specify which item Templates to group under their parent (or "Page Level"). The ExecuteCommandOnItemAndChildrenAction only looks at these items.
+
+i.e. Page level means that if you have several datasource items under a “Page” item in sitecore, they can be grouped together in the UI and submitted together using this new Workflow Action.
