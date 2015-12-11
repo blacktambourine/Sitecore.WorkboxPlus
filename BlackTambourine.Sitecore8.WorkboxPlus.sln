@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackTambourine.Sitecore8.WorkboxPlus", "BlackTambourine.Sitecore.WorkboxPlus\BlackTambourine.Sitecore8.WorkboxPlus.csproj", "{B53C59E5-ACE8-4B04-A52F-A92054B77F54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{2FC3DFAE-5E73-446D-8FD7-C13E8EF9637B}"
+	ProjectSection(SolutionItems) = preProject
+		BlackTambourine.Sitecore.WorkboxPlus\Installer\Workbox Plus-1.0.zip = BlackTambourine.Sitecore.WorkboxPlus\Installer\Workbox Plus-1.0.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B53C59E5-ACE8-4B04-A52F-A92054B77F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53C59E5-ACE8-4B04-A52F-A92054B77F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53C59E5-ACE8-4B04-A52F-A92054B77F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53C59E5-ACE8-4B04-A52F-A92054B77F54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
