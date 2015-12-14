@@ -298,8 +298,8 @@ namespace BlackTambourine.Sitecore8.WorkboxPlus.Workbox
 
             //else if Is Checked
             var currentUserName = Context.GetUserName();
-            var lastSubmitterUserName = GetLastSubmitterUserName(item);
-            var userCheck = lastSubmitterUserName.Equals(currentUserName);
+            var workflowUsers = GetAllWorkflowUserNames(item);
+            var userCheck = workflowUsers.Any(x => x.Equals(currentUserName));
             return userCheck;
         }
 
@@ -1051,6 +1051,26 @@ namespace BlackTambourine.Sitecore8.WorkboxPlus.Workbox
             {
                 //no history use Admin
                 result = @"sitecore\admin";
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Get All users that have edited/approved/rejected/etc the item in workflow
+        /// </summary>
+        /// <param name="contentItem"></param>
+        /// <returns></returns>
+        private static IEnumerable<string> GetAllWorkflowUserNames(Item contentItem)
+        {
+            var result = new List<string> { @"sitecore\admin" }; //default value
+            var contentWorkflow = contentItem.Database.WorkflowProvider.GetWorkflow(contentItem);
+            var contentHistory = contentWorkflow.GetHistory(contentItem);
+
+            foreach (var historyStep in contentHistory)
+            {
+                var stepUser = User.FromName(historyStep.User, false);
+                var userName = stepUser.Profile.UserName;
+                result.Add(userName);
             }
             return result;
         }
