@@ -30,6 +30,7 @@ using BlackTambourine.Sitecore8.WorkboxPlus.Config;
 
 namespace BlackTambourine.Sitecore8.WorkboxPlus.Workbox
 {
+    //overrides Sitecore.Shell.Applications.Workbox.WorkboxForm,Sitecore.Client
     public class WorkboxFormPlus : BaseForm
     {
         #region Properties
