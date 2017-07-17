@@ -1,0 +1,47 @@
+﻿.panel-heading {
+    color: #fff!important;
+    background-color: #474747!important;
+	font-weight: 600!important;
+	font-size: 12px!important;
+	border-left: 5px solid #DC291E!important;
+}
+
+.wfActions {
+	margin-bottom: 1em; 	
+}
+
+.wfActions ul 
+{
+	padding-left: 0;
+}
+
+.wfActions li 
+{
+	display: inline;
+	list-style-type: none;
+	padding-right: 15px;
+	font-size: 12px!important;
+}
+	
+.wfComments{
+	margin-bottom: 1em; 
+	margin-left: 0em;
+	font-size: 12px!important;
+}
+
+.wfPreview {
+	margin-bottom: 1em; 
+	margin-left: 0em;
+	font-size: 12px!important;
+}	
+	
+.itemTitle {
+	color: #131313!important; 
+	font-size: 18px!important;
+}	
+
+.itemRow {
+	margin-bottom: 2em; 
+	margin-left: 1em; 
+	min-height: 150px;
+}
